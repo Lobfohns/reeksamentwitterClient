@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../global.css">
+    <link  href="./users.css" rel="stylesheet"><link>
+    <script src="../global.js"></script>
+    <script src="../lib/HTMLEscape.js"></script>
+    <title>Users</title>
+</head>
+<body>
+<button class="button" id = button1 onclick="document.location='../posts/posts.html'">Return to posts</button>
+<table class="table" id="user-table">
+    <button class="button" id="expand-user-form">Add User</button>
+    <div id="create-user-form">
+    </div>
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <th><input type="text" id="username-search" onkeyup="searchFunction()" placeholder="Search for username.." title="Type in a hashtag"></th>
+    </tr>
+    </thead>
+    <tbody id="user-names-list-tbody"></tbody>
+
+    <script src="users.js"></script>
+    <script src="usersCreate.js"></script>
+    <script src="usersUpdate.js"></script>
+</body>
+</html>

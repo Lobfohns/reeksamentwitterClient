@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../global.css">
+    <link  href="./hashtags.css" rel="stylesheet"><link>
+    <script src="../global.js"></script>
+    <script src="../lib/HTMLEscape.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<button class="button" id = button1 onclick="document.location='../posts/posts.html'">Return to posts</button>
+<table class="table" id="hashtag-table">
+    <button class="button" id="expand-hashtag-form">Add Hashtag</button>
+    <div id="create-hashtag-form">
+    </div>
+    <thead>
+    <tr>
+        <th>Hashtag</th>
+    </tr>
+    <tr>
+        <th><input type="text" id="hashtag-search" onkeyup="searchFunction()" placeholder="Search for hashtag.." title="Type in a hashtag"></th>
+    </tr>
+    </thead>
+    <tbody id="hashtag-names-list-tbody"></tbody>
+
+    <script src="hashtags.js"></script>
+    <script src="hashtagsCreate.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../global.css">
+    <link  href="./posts.css" rel="stylesheet"><link>
+    <script src="../global.js"></script>
+    <script src="../lib/HTMLEscape.js"></script>
+    <title>Posts</title>
+</head>
+<body>
+<div id="overall-div">
+    <button class="button" id = button2 onclick="document.location='../users/users.html'">View all users</button>
+    <button class="button" id = button3 onclick="document.location='../hashtags/hashtags.html'">View all hashtags</button>
+    <table class="table" id="post-table">
+        <button class="button" id="expand-post-form">Add Post</button>
+        <div id="create-post-form">
+        </div>
+        <thead>
+        <tr>
+            <th>Hashtag</th>
+            <th>Text</th>
+            <th>Author</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <th><input type="text" id="hashtag-search" onkeyup="searchFunction()" placeholder="Search for hashtag.." title="Type in a hashtag"></th>
+        </tr>
+        </thead>
+        <tbody id="post-names-list-tbody"></tbody>
+</div>
+<script src="posts.js"></script>
+<script src="postsUpdate.js"></script>
+<script src="postsCreate.js"></script>
+</body>
+</html>
