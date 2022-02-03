@@ -24,7 +24,7 @@ function createUser() {
         userDescription: document.getElementById("create-user-description").value
     };
 
-    fetch(localURL + "/users/", {
+    fetch(localURL + "/users", {
         method: "POST",
         headers: { "Content-type": "application/json; charset=UTF-8" },
         body: JSON.stringify(userToCreate)

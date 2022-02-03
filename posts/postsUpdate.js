@@ -31,7 +31,6 @@ function undoUpdateTableRow(post) {
 }
 
 function updatePostInBackend(post) {
-    console.log("hejtest")
     let chosenHashtag = null;
     const tableRowToUpdate = document.getElementById(post.id);
     console.log(post)
@@ -46,7 +45,7 @@ function updatePostInBackend(post) {
         const hashtagToCreate = {
             hashtagName: document.getElementById(`update-post-hashtag-${post.id}`).value
         };
-        fetch(localURL + "/hashtags/",{
+        fetch(localURL + "/hashtags",{
             method: "POST",
             headers: { "Content-type": "application/json; charset=UTF-8" },
             body: JSON.stringify(hashtagToCreate)

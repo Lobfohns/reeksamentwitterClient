@@ -22,7 +22,7 @@ function createHashtag() {
         hashtagName: document.getElementById("create-hashtag-name").value,
     };
 
-    fetch(localURL + "/hashtags/", {
+    fetch(localURL + "/hashtags", {
         method: "POST",
         headers: { "Content-type": "application/json; charset=UTF-8" },
         body: JSON.stringify(hashtagToCreate)
