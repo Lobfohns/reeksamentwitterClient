@@ -40,7 +40,7 @@ function deleteHashtag(hashtagId) {
 }
 
 function searchFunction() {
-    var input, filter, table, tr, td, i, txtValue;
+    let input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("hashtag-search");
     filter = input.value.toUpperCase();
     table = document.getElementById("hashtag-table");

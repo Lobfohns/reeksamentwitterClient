@@ -49,7 +49,7 @@ function deleteUser(userId) {
 }
 
 function searchFunction() {
-    var input, filter, table, tr, td, i, txtValue;
+    let input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("username-search");
     filter = input.value.toUpperCase();
     table = document.getElementById("user-table");
