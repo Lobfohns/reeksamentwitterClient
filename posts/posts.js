@@ -15,14 +15,12 @@ fetch(localURL + "/posts")
             })
     })
 
-
 function addPostToDivList(post){
     const selectPostToDiv = document.createElement("tr");
     selectPostToDiv.id = post.id;
     postDiv.appendChild(selectPostToDiv);
     createPostTableRow(selectPostToDiv, post)
 }
-
 function createPostTableRow(divElement, post){
     console.log("divelement,", post);
     divElement.innerHTML = `
@@ -48,7 +46,6 @@ function createPostTableRow(divElement, post){
     document.getElementById(`update-button-${post.id}`)
         .addEventListener("click", () => updatePost(post));
 }
-
 
 function deletePost(postId) {
     fetch(localURL + "/posts/" + postId, {

@@ -26,7 +26,6 @@ function createHashtagTableRow(divElement, hashtag){
         `;
 }
 
-
 function deleteHashtag(hashtagId) {
     fetch(localURL + "/hashtags/" + hashtagId, {
         method: "DELETE"

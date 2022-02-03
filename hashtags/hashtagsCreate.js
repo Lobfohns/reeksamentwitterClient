@@ -3,8 +3,8 @@ const hashtagFormExpandButton = document.getElementById("expand-hashtag-form");
 
 const createHashtagForm = `<div>
     <input id="create-hashtag-name" placeholder="Hashtag name">
-    <button class="button" id="CancelButton"   onclick="removeHashtagForm()">Cancel</button>
-    <button class="button" id="CreateButton"  onclick="createHashtag()">Create A Hashtag</button>
+    <button class="button" id="CancelButton" onclick="removeHashtagForm()">Cancel</button>
+    <button class="button" id="CreateButton" onclick="createHashtag()">Create A Hashtag</button>
 </div>`;
 
 function showHashtagForm() {
